@@ -1,0 +1,787 @@
+body
+{
+    font-family: arial,lucinda,verdana,geneva,sans-serif;
+    background: url("../images/fond.jpg") repeat-x scroll 0 0 #2480D3;
+}
+
+
+
+
+
+.bouton
+{
+    width: 30px;
+    margin-left: 50px;
+    margin-right: 600px;
+    box-shadow: 1px 1px 1px #44AEE4;
+}
+
+nav
+{
+	display: inline-block;
+	margin-left: 10px;
+	width: 170px;
+}
+
+li
+{
+}
+nav ul
+{
+	list-style-type: none;
+}
+header{
+    height:150px;
+}
+
+header h1
+{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+}
+
+header img
+{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+label
+{
+  /*  display: block;
+    width: 150px;
+   float: left;
+  font-weight: bold;
+*/
+display: block;
+    width: 200px;
+    float: left;
+margin-top: 10px;
+}
+
+#message
+{
+    margin-bottom: 40px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bolder;
+    color:#000046;
+    border-bottom: 5px double #44aee4;
+}
+
+fieldset div
+{
+    line-height: 1em;
+}
+
+
+
+#menu_gauche
+{
+  
+    background-color: #44AEE4;
+     position: fixed;
+    float: left;
+    padding-top: 60px;
+    padding-left: 50px;
+    height: 100%;
+    width: 18%;
+   color:#090937;
+   
+}
+#menu_gauche input[type = 'button']
+{
+    width: 150px;
+}
+li
+{
+    list-style-type: none;
+}
+#menu_gauche ul
+{
+    margin: 3px;
+    padding: 0;
+    padding-bottom: 200px;
+
+}
+#menu_gauche li 
+{
+    margin-bottom: 5px;
+}
+
+#menu_gauche .page_item a
+{
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 9px;
+    padding: 3px 3px 3px 0;
+}
+#menu_gauche .page_item ul li a
+{
+    border: 0 none;
+    color: #093E71 !important;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 0;
+}
+li.current_page_item a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+li.current_page_parent a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+
+#content
+{
+    float: left;
+    padding-top: 20px;
+   width: 80%;
+   margin-left: 20%;
+   min-height: 556px;
+}
+#content input 
+{
+  /
+
+}
+.liste_table
+{
+    width: 100%;
+}
+#contenu
+{
+    margin-top: 129px;
+    position: relative;
+    
+    width: 1200px;
+ 
+}
+
+#header
+{
+    background: url("../images/fond.jpg") repeat-x scroll 0 0 #2480D3;
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    z-index: 1;
+}
+p 
+{
+    margin-bottom: 20px;
+}
+
+#page
+{
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    width: 1200px;
+    background-color: white;
+
+}
+#menu_gauche nav ul
+{
+    margin: 3px;
+    padding: 0;
+}
+#menu_gauche nav .page_item
+{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu_gauche nav .page_item ul
+{
+    margin: 3px 3px 3px 12px;
+    padding: 0;
+}
+#menu_gauche nav .page_item a
+{
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 3px 3px 0;
+}
+#menu_gauche nav .page_item ul li a
+{
+    border: 0 none;
+    color: #093E71 !important;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 0;
+}
+li.current_page_item a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+li.current_page_parent a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+
+.label
+{
+    color: #000046;
+    font-weight: bold;
+    margin-right:5px; 
+    margin-top:2px;
+}
+
+
+fieldset
+{
+	border:3px double #44aee4 ;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	width: 60%;
+	margin-bottom: 20px;
+
+}
+fieldset input, select,textarea{
+
+    border-radius: 7px;
+}
+#Annee_etudes
+{
+        border-radius: 7px;
+
+}
+form  input[type=submit]
+{   background:#1B4F9C;
+    color:white;
+    border-radius: 10px; 
+    
+}
+/*
+legend
+{
+  padding: 0.2em 0.5em;
+  font-weight: bolder;
+  font-style: italic;
+  border:3px double #44aee4 ;
+  color:#1B4F9C;
+  font-size:80%;
+  text-align:left;
+ }
+*/
+.div_form_add label, .div_form_modiffy label
+{
+
+
+
+    width: 230px;
+    color: #1B4F9C;
+    margin-top: 0px;
+}
+
+.div_form_add input, .div_form_add select, .div_form_add textarea, .div_form_modiffy input, .div_form_modiffy select, .div_form_modiffy textarea
+{
+    width: 28%;
+}
+
+.div_form_add fieldset input, .div_form_add fieldset select, .div_form_add fieldset textarea
+{
+	 width: 50%;
+}
+
+.div_buttons_validation_form .erase_button, .div_buttons_validation_form .return_button
+{
+    width: 125px;
+}
+
+.div_buttons_validation_form .confirm_button
+{
+    width: 300px;
+}
+
+#div_if_residence_1, #div_if_residence_0
+{
+	margin-bottom: 20px;
+}
+
+.fiche fieldset
+{
+	width: 80%;
+
+
+}
+.fiche input, select, textarea {
+    border: inset;
+}
+
+.fiche fieldset p span
+{
+	
+
+}
+
+
+.div_form_fiche
+{
+	border-top:3px double #44aee4;
+	margin-top: 50px;
+	padding-top: 30px;
+}
+
+.div_form_fiche p
+{
+	margin-bottom: 4em;
+}
+.div_form_fiche label
+{
+	width: 32%;
+}
+.div_form_fiche input, .div_form_fiche textarea
+{
+	width: 60%;
+}
+
+#div_fiche_info_1
+{
+	float: left;
+	display: inline-block;
+}
+
+#div_fiche_info_2
+{
+	position: relative;
+	margin-right: 
+}
+
+#div_fiche_info
+{
+	padding-bottom: 30px;
+}
+
+#div_fiche_condition
+{ 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color:#1B4F9C;
+}
+#div_fiche_condition form radio
+{ 
+    margin-left: 122px;
+
+}
+#div_fiche_condition input,select,textarea, {
+    border: inset; 
+
+    
+}
+#Annee_etudes{
+        border: inset;
+
+}
+#div_fiche_condition label {
+   font-size:%;
+}
+#div_fiche_condition fieldset{
+
+     width: 820px;
+}
+.very_important
+{
+    font-weight: bolder;
+}
+
+.important
+{
+    font-weight: bold;
+}
+
+#div_fiche_condition li
+{
+    line-height: 2em;
+}
+
+#div_fiche_condition li.first_li
+{
+    list-style-type: disc;
+}
+
+#div_fiche_condition li.autre_li
+{
+    list-style-type: none;
+}
+
+#div_fiche_condition li.autre_li:before
+{
+    content: "-  ";
+}
+
+#div_fiche_info_comp label
+{
+    width: 27%;
+}
+
+#div_fiche_info_comp p input
+{
+    width: 30%;
+}
+
+#div_fiche_info_comp p span input[type="radio"] 
+{
+    width: 20px;
+    margin-right: 20px;
+}
+
+#div_fiche_upload_doc .input_upload
+{
+    width: 40%;
+}
+
+#div_fiche_upload_doc .input_upload_where_file
+{
+    margin-left: 25px;
+    width: 25%;
+}
+
+.green
+{
+    color: green;
+}
+
+.red 
+{
+    color: red;
+}
+
+.glyphicon_1_line
+{
+    left:-172px;
+    top:3px;
+}
+
+.glyphicon_2_line
+{
+    left:-172px;
+    top:-3px;
+}
+
+.glyphicon_2_line_ok
+{
+    left:-172px;
+    top:8px;
+}
+
+#div_fiche_upload_doc
+{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color:#1B4F9C;
+}
+
+#div_fiche_upload_doc label
+{
+    float:none;
+    display: inline-block;
+    width:150px;
+    margin-left: 10px;
+}
+
+#upload_cv label, #upload_photo label
+{
+    margin-top: 10px;
+}
+
+
+#div_fiche_upload_doc input[type=file]
+{
+    display: inline;
+    margin-right: 20px;
+}
+
+#div_fiche_upload_doc input[type=submit]
+{
+    margin-top: -17px;
+}
+#div_fiche_upload_doc input[type=submit]
+{
+    margin-top: -17px;
+}
+#div_fiche_condition input[type=submit]{
+    margin-left: 250px;
+}
+#div_fiche_condition input[type=submit]{
+    margin-left: 260px;
+}
+#div_fiche_condition input[type=radio]{
+    margin-left: 20px;
+    width: 15px;
+}
+#acces_notes_diplomes
+{
+    padding-top: 25px;
+    padding-right: 100px;
+    font-weight: bold;
+}
+
+#acces_notes_diplomes a 
+{
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+.error_upload_file
+{
+   border-color: #D82C3C;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    margin-right: 127px;
+    padding-left: 40px;
+   /* padding: 15px 15px 5px 5px;*/
+}
+
+.error_upload_file .glyphicon {
+    display: inline;
+    top:10px;
+    left:-20px;
+}
+
+.error_upload_file p 
+{
+    line-height: 0em;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+#div_fiche_upload_doc>p 
+{
+    margin-bottom: 30px;
+}
+
+.photo_mini
+{
+    margin-top:-5px;
+    width: 80px;
+}
+
+.logo_mini
+{
+    margin-top:-25px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#table_stage_projet, #table_langue, #table_emploi
+{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#table_stage_projet thead, #table_langue thead, #table_emploi head
+{
+    color: #0B2854;
+    font-size: 0.8em;
+
+}
+#table_stage_projet tbody, #table_langue tbody, #table_emploi tbody
+{
+    color: #1B56AE;
+    font-size: 0.8em;
+}
+#table_stage_projet td
+{
+    width: 80px;
+    text-align: center;
+
+}
+
+#table_langue td
+{
+    width: 100px;
+    text-align: center;
+}
+
+#table_emploi td
+{
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+#table_emploi tbody tr th:first-child
+{
+    width: 60px;
+}
+
+#table_stage_projet th, #table_langue th, #table_emploi th
+{
+     text-align: center;
+    vertical-align: middle;
+}
+
+tr#tr_add td 
+{
+    margin-left: 5px;
+    padding-right: 5px;
+}
+
+tr#tr_add input
+{
+    width: 70px;
+    font-size: 0.9em;
+}
+
+#table_langue tr#tr_add input,#table_langue tr#tr_add select
+{
+    margin-left: 5px;
+    width: 100px;
+    font-size: 0.9em;
+}
+#table_langue tr#tr_add select
+{
+    text-align: center;
+}
+
+#table_langue tr#tr_add select.little_select, #table_langue tr#tr_add input.little_input
+{
+    margin-left: 25px;
+    width: 60px;
+}
+
+#table_emploi tbody#tr_add tr input,#table_emploi tbody#tr_add tr select
+{
+    
+    width: 80px;
+    font-size: 0.9em;
+}
+#table_emploi tbody#tr_add tr select
+{
+    text-align: center;
+}
+
+#table_emploi tbody#tr_add tr select.little_select, #table_emploi tbody#tr_add tr input.little_input
+{
+    margin-left: 25px;
+    width: 60px;
+}
+
+.mini_drapeau
+{
+    height: 20px;
+}
+
+.info_base_error
+{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    top : -55px;
+    left: 540px;
+    font-size: 0.9em;
+}
+
+.background_error
+{
+    background-color: #F7A1A1;
+    color:#960000;
+} 
+
+.background_error::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #B9575C;
+}
+.background_error:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #B9575C;
+   opacity:  1;
+}
+.background_error::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #B9575C;
+   opacity:  1;
+}
+.background_error:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #B9575C;
+}
+
+.background_error input[type="text"][title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+
+.error_message
+{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    width: 50%;
+}
+
+tr[id^="info_sps_"] td div, tr[id^="info_langue_"] td div
+{
+    display: inline;
+}
+
+tr[id^="info_sps_"] td div:first-child, tr[id^="info_langue_"] td div:first-child
+{
+   margin-right: 10px;
+}
+
+
+tr[id^="info_sps_"] td div form, tr[id^="info_langue_"] td div form
+{
+    height: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+tbody[id^="info_emploi_"] tr td div
+{
+    display: inline;
+}
+
+tbody[id^="info_emploi_"] tr td div:first-child
+{
+   margin-right: 10px;
+}
+
+tbody[id^="info_emploi_"] tr td div form
+{
+    height: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.actuel_background
+{
+    background-color: #B1E0F9;
+}
+#boutton_deconnexion
+{
+    float: left;
+    background: red;
+}
+

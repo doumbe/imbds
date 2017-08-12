@@ -1,0 +1,72 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename: etudiant_css.css
+* Version: 1.0.0 (2014-08-11) YYYY-MM-DD
+* Website: http://site.com/
+* Auteur: Rosa Mopolo
+* Description: Défini la typographie, le layout, les positions des objets relies a la partie Ancien.
+== STRUCTURE: ==============================
+* Page width: 950 px
+* Number of columns: 2
+============================================
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+#menu_gauche
+{
+    position:fixed;
+    background-color: #44AEE4;
+    float: left;
+    padding: 10px;
+    height: 100%;
+    width: 170px;
+}
+
+#content
+{
+    min-height: 680px;
+}
+#menu_gauche ul
+{
+    margin: 3px;
+    padding: 0;
+}
+#menu_gauche .page_item
+{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu_gauche .page_item ul
+{
+    margin: 3px 3px 3px 12px;
+    padding: 0;
+}
+#menu_gauche .page_item a
+{
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 3px 3px 0;
+}
+#menu_gauche .page_item ul li a
+{
+    border: 0 none;
+    color: #093E71 !important;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 0;
+}
+li.current_page_item a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+li.current_page_parent a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}

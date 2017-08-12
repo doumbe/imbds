@@ -1,0 +1,669 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename: site_mbds.css
+* Version: 2.0.0 (2014-06-13) YYYY-MM-DD
+* Website: http://site.com/
+* Auteur: Rosa Mopolo
+* Description: Css récupéré à partir de la page web du site du Master MBDS.
+== STRUCTURE: ==============================
+* Page width: 950 px
+* Number of columns: 2
+============================================
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+body
+{
+    background: url("../images/fond.jpg") repeat-x;
+    background-color: #2480D3;
+    color: #333333;
+    font-family: arial,lucinda,verdana,geneva,sans-serif;
+    font-size: 64.5%;
+    margin: 0 0 5px;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
+
+#page
+{
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    width: 960px;
+}
+#contenu
+{
+    background-color: #FFFFFF;
+    clear: both;
+    float: left;
+    width: 960px;
+}
+
+#content
+{
+    font-size: 1.2em;
+}
+
+.narrowcolumn .entry, .widecolumn .entry
+{
+    line-height: 1.4em;
+}
+
+.widecolumn
+{
+    background-color: #FFFFFF;
+    line-height: 1.6em;
+    margin: 5px 0 0 150px;
+    padding: 10px 0 20px;
+    width: 650px;
+}
+
+
+.alt
+{
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    margin: 0;
+    padding: 10px;
+}
+
+#footer
+{
+    background-color: #C0C0C0;
+    border: medium none;
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+small
+{
+    font-family: arial,lucinda,verdana,geneva,sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+h1, h2, h3
+{
+    font-family: arial,lucinda,verdana,geneva,sans-serif;
+    font-weight: bold;
+}
+
+h1
+{
+    font-size: 4em;
+    margin: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+
+h2.pagetitle
+{
+    font-size: 1.6em;
+}
+
+#sidebar h2
+{
+    font-family: arial,lucinda,verdana,geneva,sans-serif;
+    font-size: 1.2em;
+    margin: 5px 0 0;
+    padding: 0;
+
+}
+
+h3
+{
+    font-size: 1.3em;
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited
+{
+    color: #333333;
+}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite
+{
+    text-decoration: none;
+}
+
+.entry p a:visited
+{
+    color: #B85B5A;
+}
+
+.commentlist li, #commentform input, #commentform textarea
+{
+    font: 0.9em arial,lucinda,verdana,geneva,sans-serif;
+}
+.commentlist li
+{
+    font-weight: bold;
+}
+
+.commentlist cite, .commentlist cite a
+{
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: bold;
+}
+.commentlist p
+{
+    font-weight: normal;
+    line-height: 1.5em;
+    text-transform: none;
+}
+#commentform p
+{
+    font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+}
+.commentmetadata
+{
+    font-weight: normal;
+}
+
+#sidebar
+{
+    float: left;
+    font: 1em arial,lucinda,verdana,geneva,sans-serif;
+    padding: 20px 0 10px;
+    width: 190px;
+}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike
+{
+    color: #777777;
+}
+
+code
+{
+    font: 1.1em 'Courier New',Courier,Fixed;
+}
+acronym, abbr, span.caps
+{
+    font-size: 0.9em;
+    letter-spacing: 0.07em;
+}
+
+a, h2 a:hover, h3 a:hover
+{
+    color: #0066CC;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #114477;
+    text-decoration: underline;
+}
+#wp-calendar #prev a, #wp-calendar #next a
+{
+    font-size: 9pt;
+}
+#wp-calendar a
+{
+    text-decoration: none;
+}
+#wp-calendar caption
+{
+    font: bold 1.3em 'Lucida Grande',Verdana,Arial,Sans-Serif;
+    text-align: center;
+}
+#wp-calendar th
+{
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+
+#header
+{
+    background-image: url("../images/unsa.jpg");
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 960px;
+}
+.narrowcolumn
+{
+    float: left;
+    margin: 0;
+    padding: 0 0 20px 45px;
+    width: 650px;
+}
+
+.post
+{
+    margin-top: 10px;
+    padding: 5px;
+}
+.post hr
+{
+    display: block;
+}
+.widecolumn .post
+{
+    margin: 0;
+}
+.narrowcolumn .postmetadata
+{
+    padding-top: 5px;
+    text-align: center;
+}
+.widecolumn .postmetadata
+{
+    margin: 30px 0;
+}
+.widecolumn .smallattachment
+{
+    float: left;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+    width: 128px;
+}
+.widecolumn .attachment
+{
+    margin: 5px 0;
+    text-align: center;
+}
+.postmetadata
+{
+    clear: left;
+}
+.clear
+{
+    clear: both;
+}
+
+#footer p
+{
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 16px;
+    margin: 0;
+}
+h2.pagetitle
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+h3.comments
+{
+    margin: 40px auto 20px;
+    padding: 0;
+}
+p img
+{
+    max-width: 100%;
+    padding: 0;
+}
+img.centered
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.alignright
+{
+    display: inline;
+    margin: 0 0 2px 7px;
+    padding: 4px;
+}
+img.alignleft
+{
+    display: inline;
+    margin: 0 7px 2px 0;
+    padding: 4px;
+}
+.alignright
+{
+    float: right;
+}
+.alignleft
+{
+    float: left;
+}
+html > body .entry ul
+{
+    list-style: none outside none;
+    margin-left: 0;
+    padding: 0 0 0 10px;
+    text-indent: -10px;
+}
+html > body .entry li
+{
+    margin: 7px 0 8px 10px;
+}
+.entry ul li:before, #sidebar ul ul li:before
+{
+    content: "» ";
+}
+.entry ol
+{
+    margin: 0;
+    padding: 0 0 0 35px;
+}
+.entry ol li
+{
+    margin: 0;
+    padding: 0;
+}
+.postmetadata ul, .postmetadata li
+{
+    display: inline;
+    list-style-image: none;
+    list-style-type: none;
+}
+#sidebar ul, #sidebar ul ol
+{
+    margin: 0;
+    padding: 0;
+}
+#sidebar ul li
+{
+    list-style-image: none;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#sidebar ul p, #sidebar ul select
+{
+    margin: 5px 0 8px;
+}
+#sidebar ul ul, #sidebar ul ol
+{
+    margin: 5px 0 0 10px;
+}
+#sidebar ul ul ul, #sidebar ul ol
+{
+    margin: 0 0 0 10px;
+}
+ol li, #sidebar ul ol li
+{
+    list-style: decimal outside none;
+}
+#sidebar ul ul li, #sidebar ul ol li
+{
+    margin: 3px 0 0;
+    padding: 0;
+}
+#searchform
+{
+    float: right;
+    margin: 7px;
+}
+#sidebar #searchform #s
+{
+    padding: 2px;
+    width: 108px;
+}
+#sidebar #searchsubmit
+{
+    padding: 1px;
+}
+.entry form
+{
+    text-align: center;
+}
+select
+{
+    width: 130px;
+}
+#commentform input
+{
+    margin: 5px 5px 1px 0;
+    padding: 2px;
+    width: 170px;
+}
+#commentform textarea
+{
+    padding: 2px;
+    width: 100%;
+}
+#commentform #submit
+{
+    float: right;
+    margin: 0;
+}
+
+
+.commentlist
+{
+    padding: 0;
+    text-align: justify;
+}
+.commentlist li
+{
+    list-style: none outside none;
+    margin: 15px 0 3px;
+    padding: 5px 10px 3px;
+}
+.commentlist li .avatar
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    float: right;
+    padding: 2px;
+}
+.commentlist p
+{
+    margin: 10px 5px 10px 0;
+}
+#commentform p
+{
+    margin: 5px 0;
+}
+.nocomments
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.commentmetadata
+{
+    display: block;
+    margin: 0;
+}
+
+#sidebar form
+{
+    margin: 0;
+}
+#wp-calendar
+{
+    empty-cells: show;
+    margin: 10px auto 0;
+    width: 155px;
+}
+#wp-calendar #next a
+{
+    padding-right: 10px;
+    text-align: right;
+}
+#wp-calendar #prev a
+{
+    padding-left: 10px;
+    text-align: left;
+}
+#wp-calendar a
+{
+    display: block;
+}
+#wp-calendar caption
+{
+    text-align: center;
+    width: 100%;
+}
+#wp-calendar td
+{
+    padding: 3px 0;
+    text-align: center;
+}
+#wp-calendar td.pad:hover
+{
+    background-color: #FFFFFF;
+}
+acronym, abbr, span.caps
+{
+    cursor: help;
+}
+acronym, abbr
+{
+    border-bottom: 1px dashed #999999;
+}
+blockquote
+{
+    border-left: 5px solid #DDDDDD;
+    margin: 15px 30px 0 10px;
+    padding-left: 20px;
+}
+blockquote cite
+{
+    display: block;
+    margin: 5px 0 0;
+}
+.center
+{
+    text-align: center;
+}
+hr
+{
+    display: none;
+}
+a img
+{
+    border: medium none;
+}
+.navigation
+{
+    display: block;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    text-align: center;
+}
+#menu
+{
+    background-color: #093E71;
+    float: left;
+    font-size: 1.3em;
+    width: 100%;
+}
+#menu ul
+{
+    margin: 9px 5px 0;
+    text-indent: 0;
+}
+#menu li
+{
+    border-right: 1px solid #0E5CC0;
+    float: left;
+    list-style-type: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+#menu li a
+{
+    color: #FFFFFF;
+}
+#menugauche
+{
+    background-color: #DBDBDB;
+    float: left;
+    padding: 10px;
+    width: 170px;
+}
+#menugauche ul
+{
+    margin: 3px;
+    padding: 0;
+}
+#menugauche .page_item
+{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menugauche .page_item ul
+{
+    margin: 3px 3px 3px 12px;
+    padding: 0;
+}
+#menugauche .page_item a
+{
+    border-bottom: 1px solid #9EB02D;
+    color: #9EB02D !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 3px 3px 0;
+}
+#menugauche .page_item ul li a
+{
+    border: 0 none;
+    color: #093E71 !important;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 0;
+}
+li.current_page_item a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+li.current_page_parent a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+.gallery ul
+{
+    list-style-position: inside;
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+.gallery li
+{
+    float: left;
+    height: 150px;
+    list-style-position: inside !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0;
+    width: 150px;
+}
+.breadcrumb
+{
+    border-bottom: 1px dotted #C0C0C0;
+    font-weight: bold;
+    padding: 5px 5px 5px 240px;
+}
+.odd
+{
+    background-color: #EAE9E7;
+    border: 1px solid #DAD8D3;
+}
+.imgtfe
+{
+    background-color: #FFFFFF;
+    border: 1px solid #DAD8D3;
+    padding: 3px;
+}

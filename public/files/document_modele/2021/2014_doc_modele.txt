@@ -1,0 +1,13 @@
+	Le	volume	dans	le	lecteur	C	s'appelle	Packard	Bell
+	Le	num‚ro	de	s‚rie	du	volume	est	96A3-4A57	
+									
+	R‚pertoire	de	C:\Users\Rosa\Dropbox\Projet_IMBDS\Travail	en	cours\GM\documents_modele\2014\7contratsModele				
+									
+01/08/2014	09:46	<REP>	.						
+01/08/2014	09:46	<REP>	..						
+17/04/2013	12:59	14ÿ279	files/document_modele/2014/1Contrat_d'inscription-M2MBDS_Nom_Prenom_ETudiant.docx						
+17/04/2013	12:53	12ÿ814	files/document_modele/2014/2accord_confidentialité_propriété(2)-M2MBDS_Nom_Prenom_ETudiant.docx						
+17/04/2013	13:01	14ÿ140	files/document_modele/2014/3Contrat_d'inscription-MIAGE2MBDS_Nom_Prenom_ETudiant.docx						
+24/07/2012	14:25	12ÿ839	files/document_modele/2014/4accord_confidentialité_propriété(2)-MIAGE2MBDS_Nom_Prenom_ETudiant.docx						
+	4	fichier(s)	54ÿ072	octets					
+	2	R‚p(s)	13ÿ762ÿ908ÿ160	octets	libres				

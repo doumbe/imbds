@@ -1,0 +1,975 @@
+body
+{
+    font-family: arial,lucinda,verdana,geneva,sans-serif;
+    background: url("../images/fond.jpg") repeat-x scroll 0 0 #2480D3;
+}
+
+
+input, select
+{
+    width: 250px;
+    font-family: serif;
+
+}
+input[type = 'submit']
+{
+    width: 100px;
+}
+.bouton_recherche 
+{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+
+.bouton
+{
+    width: 30px;
+    margin-left: 50px;
+    margin-right: 600px;
+    box-shadow: 1px 1px 1px #44AEE4;
+}
+
+nav
+{
+	display: inline-block;
+	margin-left: 10px;
+	width: 170px;
+}
+
+li
+{
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+
+header{
+    height:130px;
+}
+
+header h1
+{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+}
+
+header img
+{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+label
+{
+    display: block;
+    width: 150px;
+   float: left;
+   font-weight: bold;
+}
+
+#titre
+{
+    text-align: center;
+}
+
+#page
+{
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    width: 1200px;
+    background-color: white;
+
+}
+
+
+
+.recherche
+{
+    margin-left: 10px;
+    padding: 15px;
+
+    
+    background-color: #EDF5FC;
+    border-color: #44AEE4;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    padding: 15px 15px 5px 5px;
+    width: 50%;
+    color: #1E53A2;
+}
+
+.recherche *
+{
+    padding-left: 5px;
+}
+
+.recherche legend
+{
+     color: #000046;
+     font-weight: bold;
+}
+
+.recherche label
+{
+    color: #1B4F9C;
+}
+
+.ajout_element 
+{
+    margin-left: 10px;
+
+}
+
+fieldset div
+{
+    line-height: 1em;
+}
+
+
+#menu_gauche
+{
+  
+    background-color: #44AEE4;
+     position: fixed;
+    float: left;
+    padding-top: 30px;
+    padding-left: 50px;
+    height: 100%;
+    width: 18%;
+   
+   /*margin-top: -13px;*/
+}
+#menu_gauche input[type = 'button']
+{
+    width: 150px;
+}
+li
+{
+    list-style-type: none;
+}
+#menu_gauche ul
+{
+    margin: 3px;
+    padding: 0;
+}
+#content
+{
+    float: left;
+    padding-top: 20px;
+   width: 80%;
+   margin-left: 20%;
+   min-height: 556px;
+}
+.liste_table
+{
+    width: 100%;
+}
+#contenu
+{
+    margin-top: 129px;
+    position: relative;
+    
+    width: 1200px;
+ 
+}
+#header
+{
+    background: url("../images/fond.jpg") repeat-x scroll 0 0 #2480D3;
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    z-index: 1;
+}
+p 
+{
+    margin-bottom: 20px;
+}
+
+
+#menu_gauche nav ul
+{
+    margin: 3px;
+    padding: 0;
+}
+#menu_gauche nav .page_item
+{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu_gauche nav .page_item ul
+{
+    margin: 3px 3px 3px 12px;
+    padding: 0;
+}
+#menu_gauche nav .page_item a
+{
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 3px 3px 0;
+}
+#menu_gauche nav .page_item ul li a
+{
+    border: 0 none;
+    color: #093E71 !important;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 0;
+}
+li.current_page_item a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+li.current_page_parent a
+{
+    color: #2480D3 !important;
+    font-weight: bold;
+}
+
+#titre h1
+{
+    color: #1B4F9C;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div p
+{
+    line-height: 0.5em;
+}
+
+.label
+{
+    color: #000046;
+    font-weight: bold;
+    margin-right:5px; 
+    margin-top:2px;
+}
+
+
+.bloc_info
+{
+    /*background-color: #EDF5FC;*/
+    border-color: #44AEE4;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    padding: 15px 5px 5px 5px;
+    width: 70%;
+    color: #1E53A2;
+
+}
+
+
+
+
+#div_new_contact label, #div_modify_contact label, #div_fiche_contact label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_contact input, #div_new_contact select, #div_modify_contact input, #div_modify_contact select, #div_modify_contact textarea
+{
+    width: 27%;
+}
+
+#div_new_entreprise label, #div_modify_entreprise label, #div_fiche_entreprise label
+{
+    width: 180px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_entreprise input, #div_new_entreprise select, #div_modify_entreprise input, #div_modify_entreprise select
+{
+    width: 32%;
+}
+
+#div_new_intervenant label, #div_modify_intervenant label, #div_fiche_intervenant label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_intervenant input, #div_new_intervenant select, #div_modify_intervenant input, #div_modify_intervenant select, #div_modify_intervenant textarea
+{
+    width: 27%;
+}
+
+
+#div_new_matiere label, #div_modify_matiere label, #div_fiche_matiere label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_matiere input, #div_new_matiere select, #div_new_matiere textarea, #div_modify_matiere input, #div_modify_matiere select, #div_modify_matiere textarea
+{
+    width: 27%;
+}
+
+#div_new_cours label, #div_modify_cours label, #div_fiche_cours label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_cours input, #div_new_cours select, #div_new_cours textarea, #div_modify_cours input, #div_modify_cours select, #div_modify_cours textarea
+{
+    width: 27%;
+}
+
+
+#div_new_salle label, #div_modify_salle label, #div_fiche_salle label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_salle input, #div_new_salle select, #div_new_salle textarea, #div_modify_salle input, #div_modify_salle select, #div_modify_salle textarea
+{
+    width: 27%;
+}
+
+
+
+#div_new_planning label, #div_modify_planning label, #div_fiche_planning label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_planning input, #div_new_planning select, #div_new_planning textarea, #div_modify_planning input, #div_modify_planning select, #div_modify_planning textarea
+{
+    width: 27%;
+}
+
+#div_new_formation label, #div_modify_formation label, #div_fiche_formation label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_formation input, #div_new_formation select, #div_new_formation textarea, #div_modify_formation input, #div_modify_formation select, #div_modify_formation textarea
+{
+    width: 27%;
+}
+
+
+#div_new_antenne label, #div_modify_antenne label, #div_fiche_antenne label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_antenne input, #div_new_antenne select, #div_new_antenne textarea, #div_modify_antenne input, #div_modify_antenne select, #div_modify_antenne textarea
+{
+    width: 27%;
+}
+
+#div_new_seance label, #div_modify_seance label, #div_fiche_seance label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_seance input, #div_new_seance select, #div_new_seance textarea, #div_modify_seance input, #div_modify_seance select, #div_modify_seance textarea
+{
+    width: 27%;
+}
+
+#div_new_semestre label, #div_modify_semestre label, #div_fiche_semestre label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_semestre input, #div_new_semestre select, #div_new_semestre textarea, #div_modify_semestre input, #div_modify_semestre select, #div_modify_semestre textarea
+{
+    width: 27%;
+}
+
+#div_new_ue label, #div_modify_ue label, #div_fiche_ue label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_ue input, #div_new_ue select, #div_new_ue textarea, #div_modify_ue input, #div_modify_ue select, #div_modify_ue textarea
+{
+    width: 27%;
+}
+
+#div_new_parameter label, #div_modify_parameter label, #div_fiche_parameter label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_parameter input, #div_new_parameter select, #div_new_parameter textarea, #div_modify_parameter input, #div_modify_parameter select, #div_modify_parameter textarea
+{
+    width: 27%;
+}
+
+
+#div_new_document_modele label, #div_modify_document_modele label, #div_fiche_document_modele label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_document_modele input, #div_new_document_modele select, #div_new_document_modele textarea, #div_modify_document_modele input, #div_modify_document_modele select, #div_modify_document_modele textarea
+{
+    width: 27%;
+}
+
+#div_new_langue label, #div_modify_langue label, #div_fiche_langue label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_langue input, #div_new_langue select, #div_new_langue textarea, #div_modify_langue input, #div_modify_langue select, #div_modify_langue textarea
+{
+    width: 27%;
+}
+
+#div_new_questionnaire label, #div_modify_questionnaire label, #div_fiche_questionnaire label
+{
+    width: 220px;
+    color: #1B4F9C;
+
+    margin-top: 5px;
+    line-height: 1em;
+}
+#div_modify_questionnaire label
+{
+     width: 16%;
+}
+
+#div_modify_questionnaire label:last-child 
+{
+     width: 37%;
+}
+
+#div_new_questionnaire input, #div_new_questionnaire select, #div_new_questionnaire textarea, #div_modify_questionnaire input, #div_modify_questionnaire select, #div_modify_questionnaire textarea
+{
+    width: 15%;
+}
+
+#div_new_social_networks label, #div_modify_social_networks label, #div_fiche_social_networks label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+
+}
+
+#div_new_social_networks input, #div_new_social_networks select, #div_new_social_networks textarea, #div_modify_social_networks input, #div_modify_social_networks select, #div_modify_social_networks textarea
+{
+    width: 27%;
+}
+
+
+#div_new_procedure_administrative label, #div_modify_procedure_administrative label, #div_fiche_procedure_administrative label
+{
+    width: 220px;
+    color: #1B4F9C;
+    margin-top: 12px;
+}
+
+#div_new_procedure_administrative input, #div_new_procedure_administrative select, #div_new_procedure_administrative textarea, #div_modify_procedure_administrative input, #div_modify_procedure_administrative select, #div_modify_procedure_administrative textarea
+{
+    width: 27%;
+}
+
+
+#nomcontact input, #pays_entreprise input, #ville_entreprise input, #statut_intervenant input, #antenne_intervenant input, #nom_intervenant input, #codeapogee input, #nommatiere input, #nomsemestre input, #nomue input, #semestre input, #ue input, #nomcours input, #nomformation input, #nomniveau input, #ville input, #pays input,  #nomsalle input,  #lieusalle input, #anneeplanning input, #annee_intervenant input, #anneematiere input, #anneecours input, #anneeue input, #anneesemestre input, #anneeparameter input, #nomparameter input, #anneedocument_modele input, #nomdocument_modele input, #nomlangue input, #nomsocial_networks input, #entreprise input,#nomprocedure_administrative input,  #anneequestionnaire input
+{
+    width: 60%;
+}
+
+#nomcontact label, #codeapogee label, #nommatiere label, #nomsemestre label, #nomue label, #nomformation label, #nomniveau label, #ville label, #pays label, #nomsalle label,  #lieusalle label, #anneeplanning label, #nomcours label, #anneeplanning label, #annee_intervenant label, #anneematiere label, #anneecours label, #anneeue label, #anneesemestre label, #anneeparameter label, #nomparameter label, #anneedocument_modele label, #nomdocument_modele label, #nomlangue label, #nomsocial_networks label, #entreprise label, #nomprocedure_administrative label, #anneequestionnaire label
+{
+    margin-top: 12px;
+}
+
+
+.erase_button, .return_button
+{
+    width: 100px;
+}
+
+#div_new_contact_buttons .confirm_button, #div_modify_contact_buttons .confirm_button, #div_new_entreprise_buttons .confirm_button, #div_modify_entreprise_buttons .confirm_button, #div_new_intervenant_buttons .confirm_button, #div_modify_intervenant_buttons .confirm_button,#div_new_cours_buttons .confirm_button, #div_modify_cours_buttons .confirm_button, #div_new_matiere_buttons .confirm_button, #div_modify_matiere_buttons .confirm_button, #div_new_salle_buttons .confirm_button, #div_modify_salle_buttons .confirm_button, #div_new_planning_buttons .confirm_button, #div_modify_planning_buttons .confirm_button, #div_new_antenne_buttons .confirm_button, #div_modify_antenne_buttons .confirm_button, #div_new_formation_buttons .confirm_button, #div_modify_formation_buttons .confirm_button,  #div_new_ue_buttons .confirm_button, #div_modify_ue_buttons .confirm_button, #div_new_semestre_buttons .confirm_button, #div_modify_semestre_buttons .confirm_button,  #div_new_seance_buttons .confirm_button, #div_modify_seance_buttons .confirm_button, #div_new_parameter_buttons .confirm_button, #div_modify_parameter_buttons .confirm_button,  #div_new_document_modele_buttons .confirm_button, #div_modify_document_modele_buttons .confirm_button,  #div_new_langue_buttons .confirm_button, #div_modify_langue_buttons .confirm_button,  #div_new_social_networks_buttons .confirm_button, #div_modify_social_networks_buttons .confirm_button, #div_new_procedure_administrative_buttons .confirm_button, #div_modify_procedure_administrative_buttons .confirm_button, #div_new_questionnaire_buttons .confirm_button, #div_modify_questionnaire_buttons .confirm_button
+{
+    width: 275px;
+}
+
+#div_fiche_contact, #div_fiche_entreprise, #div_fiche_intervenant, #div_fiche_matiere, #div_fiche_cours, #div_fiche_semestre, #div_fiche_planning, #div_fiche_seance, #div_fiche_salle, #div_fiche_antenne, #div_fiche_formation, #div_fiche_ue, #div_fiche_parameter, #div_fiche_document_modele, #div_fiche_langue, #div_fiche_social_networks, #div_fiche_procedure_administrative, #div_fiche_questionnaire
+{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+#div_fiche_document_modele
+{
+    width: 80%;
+}
+
+.content_fiche_contact h1, .content_fiche_entreprise h1, .content_fiche_intervenant h1, .content_fiche_matiere h1, .content_fiche_cours h1, .content_fiche_semestre h1, .content_fiche_planning h1, .content_fiche_seance h1, .content_fiche_antenne h1, .content_fiche_salle h1, .content_fiche_formation h1, .content_fiche_ue h1, .content_fiche_parameter h1, .content_fiche_document_modele h1, .content_fiche_langue h1, .content_fiche_social_networks h1, .content_fiche_procedure_administrative h1
+{
+    text-align: left;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-top: 0;
+}
+
+#div_fiche_contact label, #div_fiche_entreprise label, #div_fiche_intervenant label, #div_fiche_matiere label, #div_fiche_cours label, #div_fiche_semestre label, #div_fiche_planning label, #div_fiche_seance label, #div_fiche_salle label, #div_fiche_antenne label, #div_fiche_formation label, #div_fiche_ue label, #div_fiche_parameter label, #div_fiche_document_modele label, #div_fiche_langue label, #div_fiche_social_networks label, #div_fiche_procedure_administrative label
+{
+    margin-top: 0px;
+}
+#div_fiche_matiere label, #div_fiche_seance label, #div_fiche_cours label
+{
+    width:230px;
+}
+
+#div_fiche_contact p, #div_fiche_entreprise p, #div_fiche_intervenant p, #div_fiche_matiere p, #div_fiche_cours p, #div_fiche_semestre p, #div_fiche_planning p, #div_fiche_seance p, #div_fiche_salle p, #div_fiche_antenne p, #div_fiche_formation p, #div_fiche_ue p, #div_fiche_parameter p, #div_fiche_document_modele p, #div_fiche_langue p, #div_fiche_social_networks p, #div_fiche_procedure_administrative p, #div_fiche_questionnaire p
+{
+    line-height: 0.8em;
+}
+
+
+#div_fiche_contact span, #div_fiche_entreprise span, #div_fiche_intervenant span,  #div_fiche_matiere span,  #div_fiche_cours span, #div_fiche_semestre span, #div_fiche_planning span, #div_fiche_seance span, #div_fiche_salle span, #div_fiche_antenne span, #div_fiche_formation span, #div_fiche_ue span, #div_fiche_parameter span, #div_fiche_document_modele span, #div_fiche_langue span, #div_fiche_social_networks span, #div_fiche_procedure_administrative span, #div_fiche_questionnaire span
+{
+    display: inline-block;
+    width: 400px;
+}
+#div_fiche_matiere span, #div_fiche_seance span, #div_fiche_cours span
+{
+    width: 390px;
+}
+#div_fiche_questionnaire span
+{
+    line-height: 1.5em;
+    width: 100%;
+}
+
+.choix { display: inline; } 
+
+#anneeseance
+{
+    width: 100px;
+}
+
+#tab_seance
+{
+    font-size: 0.75em;
+}
+
+#gestion_cursus nav, #gestion_planning nav, #gestion_etudiant nav, #gestion_divers nav, #gestion_contact nav
+{
+    display: inline-block;
+    margin-left: 10px;
+    width: 500px;
+}
+
+#gestion_cursus nav ul li, #gestion_planning nav ul li, #gestion_etudiant nav ul li, #gestion_divers nav ul li, #gestion_contact nav ul li
+{
+    list-style-type: circle;
+}
+
+#message
+{
+    margin-bottom: 40px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bolder;
+    color:#000046;
+    border-bottom: 5px double #44aee4;
+}
+
+#cursus_resume
+{
+    font-size: 12px;
+}
+
+#enseignant_per_matiere, #enseignant_vac_matiere
+{
+    font-size: 11px;
+}
+
+#cursus_detail
+{
+    font-size: 10px;
+}
+
+#cursus_detail caption, #cursus_resume caption, #enseignant_per_matiere caption, #enseignant_vac_matiere caption
+{
+    font-size: 16px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bolder;
+    color:#000046;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.th_logo
+{
+    width: 40px;
+}
+
+.table_center
+{
+    text-align: center;
+}
+
+.table_vertical_center
+{
+    vertical-align: baseline;
+}
+.fiche_doc_logo
+{
+    height: 130px;
+}
+
+.fiche_proc_logo
+{
+    height: 70px;
+}
+
+.fiche_langue_logo
+{
+    height: 50px;
+    margin-top: -5px;
+    margin-left: -15px;
+}
+
+
+.fiche_social_networks_logo
+{
+    height: 50px;
+    margin-top: -5px;
+    margin-left: -15px;
+}
+
+
+#div_logo_doc_mod
+{
+    width:200px;
+    float: right;
+    margin-top:-145px;
+    font-size:11px;
+    font-style: italic;
+}
+
+#div_logo_doc_mod span
+{
+    width:160px;
+    text-align: center;
+    margin-top: -2px;
+}
+
+#div_logo_proc_admin
+{
+    width:200px;
+    float: right;
+    margin-top:-95px;
+    font-size:11px;
+    font-style: italic;
+}
+#div_logo_proc_admin img
+{
+    margin-left: -80px;
+}
+
+
+#div_logo_proc_admin span
+{
+    float: left;
+    width:160px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: -80px;
+}
+
+#div_fiche_langue #fiche_langue_label_drapeau
+{
+    margin-top: 15px;
+}
+
+#fiche_document_modele_nom_doc
+{
+    margin-left: -20px;
+}
+
+#fiche_procedure_administrative_nom_doc
+{
+    margin-top: 0px;
+    margin-left: -20px;
+}
+
+#uploder_proc img 
+{
+    float: left; 
+    margin-left: -50px;
+}
+
+.choix label 
+{ padding-top: 13px;
+}
+
+.choix #annee
+{
+    float: left;
+    margin-right: 10px;
+    width: 115px;
+}
+.choix select 
+{
+    float: left;
+    width: 160px;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+
+
+.recherche_cursus
+{
+    margin-left: 10px;
+    padding: 5px;
+
+    height: 100px;
+    background-color: #EDF5FC;
+    border-color: #44AEE4;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    padding: 5px 5px 5px 5px;
+    width: 60%;
+    color: #1E53A2;
+}
+
+#div_new_contact p
+{
+      
+}
+
+
+/*---------------GESTION ERREUR ----------------------*/
+
+.error_upload_file
+{
+    
+   border-color: #D82C3C;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 1px;
+    margin-right: 15px;
+    padding-left: 40px;
+    width:45%;
+    float: right;
+    margin-top:-59px;
+    font-size: 0.7em;
+   /* padding: 15px 15px 5px 5px;*/
+    font-family: arial,lucinda,verdana,geneva,sans-serif;;
+     font-style: italic;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+.error_upload_file .glyphicon {
+    font-size: 1.3em;
+    display: inline;
+    top:2px;
+    left:-20px;
+}
+
+.error_upload_file div
+{
+    
+    font-size: 0.9em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+.error_upload_file p 
+{
+    line-height: 1em;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.background_error, .background_error input[type="file"]
+{
+    background-color: #F7A1A1;
+    color:#960000;
+} 
+
+.background_error::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #B9575C;
+}
+.background_error:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #B9575C;
+   opacity:  1;
+}
+.background_error::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #B9575C;
+   opacity:  1;
+}
+.background_error:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #B9575C;
+}
+
+
+.background_error input[type="text"][title]:hover:after, .background_error input[type="file"][title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+}
+
+.error_message
+{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    width: 50%;
+}
+
+.red 
+{
+    color: red;
+}
+
+.photo_mini
+{
+    margin-top:-5px;
+    margin-left: -100px;
+    width: 80px;
+}
+
+.input_upload_where_file
+{
+    margin-left: -100px;
+    width: 25%;
+}
+
+#uploder_proc .input_where_photo_mini
+{
+    margin-left: -100px;
+    
+}
+
+#div_modify_langue input[type="file"], #div_modify_social_networks input[type="file"]
+{
+    display: inline-block;
+}
+#div_modify_langue .th_logo, #div_modify_social_networks .th_logo
+{
+    margin-left: -60px;
+    margin-right: 20px;
+}
+
+#ul_cursus_1
+{
+    border-bottom: 4px double #2178DA;
+}
+
+p[id^="GMQQ_Questionnaire_"] input
+{
+    display: inline;
+}
+
+#div_new_questionnaire input[id="GMQQ_NOM"]
+{
+    margin-right:10px; 
+    width: 10%;
+}
+
+#div_new_questionnaire input[id="GMQQ_DESCRIPTION"]
+{
+    width: 50%;
+}
+
+#div_modify_questionnaire div
+{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#div_modify_questionnaire div[id^="val_question"] p input
+{
+    display: inline-block;
+}
+
+#div_modify_questionnaire div[id^="val_question"] p input[id="GMQQ_DESCRIPTION"]
+{
+    width: 50%;
+}
+
+#div_modify_questionnaire #div_annee_questionnaire
+{
+    margin-bottom: 0px;
+}
+
+#div_annee_questionnaire label
+{
+    width: 37%;
+}
+

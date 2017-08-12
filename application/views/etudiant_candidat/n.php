@@ -1,0 +1,1 @@
+<?php echo $post;  //echo $di;  // echo $dd; ?>

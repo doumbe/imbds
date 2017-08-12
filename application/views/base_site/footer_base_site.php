@@ -1,0 +1,1 @@
+<div id="footer">MBDS 2008</div>
