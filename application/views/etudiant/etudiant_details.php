@@ -81,8 +81,8 @@
 		  var baseurl = "<?php //print base_url(); ?>";
 		  var etu_id = "<?php //print $etudiant->GMET_CODE; ?>";
 		</script>
-	  <script type="text/javascript" src="<?php// echo base_url(); ?>js/general.js"></script>
 	-->
+	  <script type="text/javascript" src="<?php echo base_url(); ?>js/general.js"></script>
 	</head>
 	<body>
 		

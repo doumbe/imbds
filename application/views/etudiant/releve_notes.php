@@ -13,16 +13,40 @@
 	  <script type="text/javascript" src="<?php echo base_url(); ?>js/studies.js"></script>
 	</head>
 	<body>
+		<div id = 'header'>
+	        <?php $this->load->view('backoffice/header.php'); ?>
+	        <!-- <style>
+	        	header h1 {
+        		    display: inline-block;
+				    vertical-align: bottom;
+				    margin-bottom: 0px;
+	        	}
+
+	        	header img {
+				    display: inline-block;
+				    vertical-align: bottom;
+				}
+			</style> -->
+	    </div>
 		<div id="page">
       		<div id="contenu">
+
         		<?php $this->load->view('/etudiant/etudiant_menu_gauche.php');?>
         		<div id="content" class="narrowcolumn">
+
+        			<select name="affichage_note">
+        				<option value="UE" selected>Par UE</option>
+        				<option value="Matiere">Par Matière</option>
+
+        			</select>
+
+        			
+
+
 					<div id="detail_releve_notes" class="post">
-						<TABLE border="1"
-          summary="This table gives some statistics about fruit
-                   flies: average height and weight, and percentage
-                   with red eyes (for both males and females).">
-							<CAPTION><EM>A test table with merged cells</EM></CAPTION>
+						<TABLE border="1" id="tableNoteUE"
+          summary="L'affichage des Notes de Etudiant par Unités d'Enseignement">
+							<CAPTION><EM>L'affichage des Notes de Etudiant par Unités d'Enseignement</EM></CAPTION>
 							<tr>
 								<th></th>
 								<th><?php echo lang('note_continu');?></th>
@@ -183,6 +207,62 @@
 								<?php $value_SEM = $note->GMSEM_NOM;?>
 							<?php endforeach;?>
 						</TABLE>
+
+						<style>
+
+							select{
+								margin-top: 20px;
+							}
+							
+							#tableMatiereNote{
+								margin-top: 50px;
+							}
+						</style>
+
+
+						<TABLE border="1" id="tableMatiereNote"
+          summary="L'affichage des Notes de Etudiant par Unités d'Enseignement">
+							<CAPTION><EM>L'affichage des Notes de Etudiant par Matière</EM></CAPTION>
+							<tr>
+								<th>Code APOGEE</th>
+								<th>Code de la Matière</th>
+								<th>Nom de la Matière</th>
+								<th>Note Final</th>
+							</tr>
+							<?php foreach($notes_matieres as $nm): ?>
+								<tr>
+									<td><?= $nm->gmma_code_apogee ?></td>
+									<td><?= $nm->gmue_code ?></td>
+									<td><?= $nm->gmma_nom ?></td>
+									<td><?= $nm->gmnoma_note_finale ?></td>									
+
+								</tr>
+							<?php endforeach;?>
+						</TABLE>
+
+						<script>
+        				
+	        				var affichage=document.getElementsByName('affichage_note')[0];
+	        				var tableNoteUE=document.getElementById('tableNoteUE');
+	        				var tableMatiereNote=document.getElementById('tableMatiereNote');
+
+	        				function changerTable() {
+	        					if (affichage.value=="UE"){
+	        						tableNoteUE.style.display="table";
+	        						tableMatiereNote.style.display="none";
+
+	        					}else if(affichage.value=="Matiere"){
+	        						tableNoteUE.style.display="none";
+	        						tableMatiereNote.style.display="table";
+	        					}
+	        				}
+
+	        				changerTable();
+
+	        				affichage.onchange=changerTable;
+
+	        			</script>
+							
 					</div>
 				</div>
 			</div>

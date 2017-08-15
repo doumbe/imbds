@@ -46,6 +46,15 @@
 			
 		}
 
+		public function consulter_etudiant($id){
+			return $this->db->select('gmmatiere.gmue_code, gmmatiere.gmma_nom,gm_presence.gmpre_statut, gmseance.gmsea_date,gmseance.gmsea_heure_debut, gmseance.gmsea_heure_fin')
+				->from('gmseance')->join('gmcours','gmcours.gmco_code=gmseance.gmco_code')
+				->join('gmmatiere','gmmatiere.gmma_code=gmcours.gmma_code')
+				->join('gmue','gmue.gmue_code=gmmatiere.gmue_code')
+				->join('gm_presence', 'gm_presence.gmsea_code=gmseance.gmsea_code')
+				->where(array('gm_presence.gmet_code' => $id))->get()->result();
+		}
+
 
 	}
 

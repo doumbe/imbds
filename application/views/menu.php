@@ -38,7 +38,7 @@
 					'class' => 'link a_link_file',
 					'title' => lang('accueil')
 				);
-				echo anchor("etudiant_c/etudiant_details/",lang('Etudiant'), $fiche);
+				echo anchor("etudiant_c/etudiant_login",lang('Etudiant'), $fiche);
 			?>
 		</li>
 		<li class="page_item page-item-1">

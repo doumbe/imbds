@@ -1,5 +1,6 @@
 <?php
-
+$lang['absence_presence'] = "Absence ";
+$lang['gerer CV'] = "Gerer CV ";
 $lang['accueil_MBDS'] = "Accueil_MBDS";
 $lang['civilite'] = "Civilit&eacute; :";
 $lang['nom'] = "Nom :";

@@ -9,8 +9,11 @@
 
       $this->lang->load("etudiant","french");
       $this->lang->load("calendar","french");
+    $this->load->helper("url");
+
 
       $this->load->model('etudiant_m');
+      $this->load->model('presence_m');
       $this->load->model('emploi_m');
       $this->load->model('document_attache_m');
       $this->load->model('social_networks_m');
@@ -33,10 +36,27 @@
     function index()
     {
       //$this->load->ancien_annuaire();
+      $this->etudiant_login();
+    }
+
+    public function etudiant_login() {
+         $this->load->view('etudiant/etudiant_login'); 
+    }
+
+    public function etudiant_connexion() {
+      
+          $quelques_etudiants = array("GMET012050","GMET014009","GMET014019","GMET014024");
+          // $quelques_etudiants = array("GMET030452","GMET168817","GMET197271","GMET168822");
+          $id = $quelques_etudiants[array_rand($quelques_etudiants)];
+          $this->etudiant_details($id); 
+     
+      
     }
 
     public function etudiant_details($id)
     {
+
+      if(!$id) { redirect('/etudiant_c/etudiant_login');}
 
       $etudiant = $this->etudiant_m->get_etudiant($id);
 
@@ -624,6 +644,7 @@
       //$this->note_m->initNotes(2015);
       $data["notes"] = $this->note_m->getAllNotesbyEtudiant($id_etudiant);
       $data["etudiant"] = $this->etudiant_m->get_etudiant($id_etudiant);
+      $data["notes_matieres"] = $this->note_m->getNotesMatieresByEtudiant($id_etudiant);
     // echo var_dump( $data["notes"]);
       $this->load->view('etudiant/releve_notes',$data);
 
@@ -710,6 +731,13 @@
          $this->etudiant_details($this->input->post('GMET_CODE'));
         //redirect("etudiant_c/etudiant_details/".$this->input->post('id'));
         }
+    }
+
+    public function consulterAbsence($id) {
+
+      $data['etudiant']=$this->etudiant_m->get_etudiant($id);
+     $data['absence']=$this->presence_m->consulter_etudiant($id);
+     $this->load->view('etudiant/etudiant_absence',$data);
     }
 
     public function add_file()

@@ -22,21 +22,16 @@
 	echo anchor("etudiant_c/etudiant_details/".$etudiant->GMET_CODE,lang('fiche_perso'),$fiche);
 ?>
 </li>
-<?php if($etudiant->GMET_ETAT == 'etudiant'){ ?>
-<li class="page_item">
-<a title="<?php echo lang('planing');?>" href="#"><?php echo lang('planing');?></a>
-</li>
-<li class="page_item page-item-5">
-<a title="<?php echo lang('cours');?>" href="#"><?php echo lang('cours');?></a>
+<?php //if($etudiant->GMET_ETAT == 'etudiant'){ ?>
+<!--<li class="page_item">
+<a title="<?php //echo lang('planing');?>" href="#"><?php //echo lang('planing');?></a>
+</li> -->
+<!--<li class="page_item page-item-5">
+<a title="<?php //echo lang('cours');?>" href="#"><?php //echo lang('cours');?></a>
 <ul>
-<li class="page_item page-item-1706">
-<a title="<?php echo lang('absence_presence');?>" href="#"><?php echo lang('absence_presence');?></a>
-</li>
-<li class="page_item page-item-1342">
-<a title="<?php echo lang('justificatif_absence');?>" href="#"><?php echo lang('justificatif_absence');?></a>
-</li>
+
 </ul>
-</li>
+</li> -->
 <li class="page_item page-item-12">
 <?php 
 	$note = array(
@@ -47,16 +42,9 @@
 	echo anchor("etudiant_c/releve_notes/".$etudiant->GMET_CODE,lang('notes'),$note);
 ?>
 </li>
-<li class="page_item">
-<a title="<?php echo lang('annuaire_entreprise');?>" href="#"><?php echo lang('annuaire_entreprise');?></a>
-</li>
 <li class="page_item page-item-12">
 <a title="<?php echo lang('offre_stage');?>" href="#"><?php echo lang('offre_stage');?></a>
 </li>
-<li class="page_item page-item-12">
-<a title="<?php echo lang('procedure');?>" href="#"><?php echo lang('procedure');?></a>
-</li>
-<?php }?>
 <li class="page_item page-item-12">
 <?php 
 	$ancien = array(
@@ -66,6 +54,30 @@
 	);
 	echo anchor("ancien_c/ancien_annuaire/",lang('annuaire_ancien'),$ancien);
 ?>
+</li>
+<li class="page_item">
+<a title="<?php echo lang('annuaire_entreprise');?>" href="#"><?php echo lang('annuaire_entreprise');?></a>
+</li>
+<li class="page_item">
+<a title="<?php echo lang('gerer CV');?>" href="#"><?php echo lang('gerer CV');?></a>
+</li>
+<li class="page_item page-item-12">
+<a title="<?php echo lang('procedure');?>" href="#"><?php echo lang('procedure');?></a>
+</li>
+<?php //}?>
+<li class="page_item page-item-12">
+	<?php 
+	$ancien = array(
+		'id' => 'a_menu_ancien',
+		'class' => 'link a_link_file',
+		'title' => lang('absence_presence')
+	);
+	echo anchor("etudiant_c/consulterAbsence/".$etudiant->GMET_CODE,lang("absence_presence"),$ancien);
+?>
+	
+</li>
+<li class="page_item page-item-12">
+<a title="<?php echo lang('justificatif_absence');?>" href="#"><?php echo lang('justificatif_absence');?></a>
 </li>
 </ul>
 <a target="_blank" href="http://www.facebook.com/group.php?gid=7488456084">
