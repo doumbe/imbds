@@ -17,7 +17,6 @@
         <?php $this->load->view('backoffice/menu.php'); ?>
 
         <div id = 'content' class = 'narrowcolumn'>
-		
 		<section>
 			<h1><?php echo lang('acc_title');?></h1>
 		</section>

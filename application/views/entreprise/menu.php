@@ -1,4 +1,4 @@
-<div id = 'menu_gauche'>
+<div id='menu_gauche'>
 <nav>
 	<ul>
 		<li class="page_item page-item-1">

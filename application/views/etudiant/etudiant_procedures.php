@@ -1,7 +1,6 @@
 
 <html>
   <head>
-<?php  include("/script_backoffice.php");?>
 
 <?php $this->load->view('backoffice/script_backoffice.php');?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -16,14 +15,14 @@
     </title>
   </head>
 
-    <body><div id = 'page'>
+    <body><div id = "page">
 
-      <div id = 'header'>
-        <?php include("/header.php"); ?>
+      <div id = "header">
+        <?php $this->view('header.php'); ?>
       </div><!--header-->
 
-      <div id = 'contenu'>
-        <?php include('candidat_menu_gauche.php'); ?>
+      <div id = "contenu">
+        <?php include('etudiant_menu_gauche.php'); ?>
 
         <div id = 'content' class = 'narrowcolumn'>
 
@@ -41,11 +40,14 @@
   
    <fieldset> <h2>Consulter les différentes procedures qui vous concerne</h2>
     <br/><br/>
-<p>- Procédure « <?php echo anchor("candidat_c//",lang('contrat d’apprentissage'),$fiche);?> »</p>
-<p>- Procédure « <?php echo anchor ("candidat_c//",lang('scolarité d’un apprenti'),$fiche ); ?> »</p>
-<p>- Procédure « <?php echo anchor ("candidat_c//",lang('recherche de logement'),$fiche );?> »</p>
-<p>- Procédure « <?php echo anchor ("candidat_c//",lang('la mise en place d’une convention de stage'),$fiche);?>
-  ».</p></fieldset>
+    <p><a href="#">Procédure - Contrat d'apprentissage</a></p>
+    <p><a href="#">Procédure - mise en place d’une convention de stage simple ou longue durée</a></p>
+    <p><a href="#">Procédure - logement</a></p>
+    <p><a href="#">Procédure - demander son diplôme</a></p>
+    <p><a href="#">Procédure - demander un relevé de notes</a></p>
+    <p><a href="#">Procédure - remboursement de frais d’inscription</a></p>
+    <p><a href="#">Procédure - demande son attestation de réussite</a></p>
+</fieldset>
     </div>
 
 </div>

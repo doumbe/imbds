@@ -83,7 +83,7 @@ class Entreprise_liste extends CI_Controller
   {
     $config = array();
         $config["base_url"] = base_url(). "entreprise_liste/list_etudiant";
-      $config["total_rows"] = $this->procedure_m->nombre_etudiant();
+      // $config["total_rows"] = $this->procedure_m->nombre_etudiant();
         $config["per_page"] = 20;
         $config["uri_segment"] = 3;
      

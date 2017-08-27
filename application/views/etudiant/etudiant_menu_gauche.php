@@ -1,4 +1,5 @@
 <div id="menu_gauche">
+<nav>
 <ul>
 		<li class="page_item page-item-1">
 			<?php 
@@ -43,7 +44,14 @@
 ?>
 </li>
 <li class="page_item page-item-12">
-<a title="<?php echo lang('offre_stage');?>" href="#"><?php echo lang('offre_stage');?></a>
+<?php 
+	$stage = array(
+		'id' => 'a_menu_stages',
+		'class' => 'link a_link_file',
+		'title' => lang('stages')
+	);
+	echo anchor("etudiant_c/etudiant_details/".$etudiant->GMET_CODE,lang('offre_stage'),$stage);
+?>
 </li>
 <li class="page_item page-item-12">
 <?php 
@@ -56,13 +64,34 @@
 ?>
 </li>
 <li class="page_item">
-<a title="<?php echo lang('annuaire_entreprise');?>" href="#"><?php echo lang('annuaire_entreprise');?></a>
+<?php $annuaire_entreprise = array(
+		'id' => 'a_menu_annuaire_entreprise',
+		'class' => 'link a_link_file',
+		'title' => lang('annuaire_entreprise')
+	);
+	echo anchor("etudiant_c/annuaire_entreprise/",lang('annuaire_entreprise'),$annuaire_entreprise);
+?>
 </li>
 <li class="page_item">
-<a title="<?php echo lang('gerer CV');?>" href="#"><?php echo lang('gerer CV');?></a>
+<?php 
+	$fiche = array(
+		'id' => 'a_menu_fiche',
+		'class' => 'link a_link_file',
+		'title' => lang('gerer CV')
+	);
+	echo anchor("/etudiant_c/etudiant_details/".$etudiant->GMET_CODE,lang('gerer CV'),$fiche);
+?>
+
 </li>
 <li class="page_item page-item-12">
-<a title="<?php echo lang('procedure');?>" href="#"><?php echo lang('procedure');?></a>
+<?php 
+	$proc_admin = array(
+		'id' => 'a_menu_proc_admin',
+		'class' => 'link a_link_file',
+		'title' => lang('procedure')
+	);
+	echo anchor("etudiant_c/procedure_admin/".$etudiant->GMET_CODE,lang('procedure'),$proc_admin);
+?>
 </li>
 <?php //}?>
 <li class="page_item page-item-12">
@@ -77,10 +106,18 @@
 	
 </li>
 <li class="page_item page-item-12">
-<a title="<?php echo lang('justificatif_absence');?>" href="#"><?php echo lang('justificatif_absence');?></a>
+<?php 
+	$ja = array(
+		'id' => 'a_ja',
+		'class' => 'link a_link_file',
+		'title' => lang('justificatif_absence')
+	);
+	echo anchor("/etudiant_c/deposer_justificatif_absence/".$etudiant->GMET_CODE,lang("justificatif_absence"),$ja);
+?>
 </li>
 </ul>
 <a target="_blank" href="http://www.facebook.com/group.php?gid=7488456084">
-<img src="http://www.mbds-fr.org/wp-content/themes/default/images/fb.gif">
+<img src="http://www.mbds-fr.org/wp-content/themes/default/images/fb.gif" alt="Find us on Facebook">
 </a>
+</nav>
 </div>

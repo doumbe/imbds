@@ -89,5 +89,54 @@
 			$this->db->delete('GMStageProjetSeminaire', $where);
 		}
 
+		public function calcul_afficher()
+		{
+			$this->db->select("COUNT(*)")->from("GMStageProjetSeminaire")->get()->result();
+		}
+
+		public function getByPage($num_page,$number_parametre_page)
+		{
+
+			if($num_page>0 and $number_parametre_page>=0)
+			{
+				if($number_parametre_page == 0)
+				{
+					$number_parametre_page=1;
+				}
+
+				if($number_parametre_page == 1)
+				{
+					$min = ($num_page+$number_parametre_page)-$num_page-1;
+				}
+				else
+				{
+					$min = ($num_page+$number_parametre_page)-$num_page;
+				}
+
+				$value = $this->db->distinct()->select('*')
+												->from('GMStageProjetSeminaire')
+												->order_by("GMET_CODE", "DESC");
+
+				$query = $this->db->limit($num_page,$min)->get();
+
+				if ($query->num_rows() > 0)
+				{
+					foreach ($query->result() as $row)
+					{
+						$data[] = $row;
+					}
+					return $data;
+				}
+				else
+				{
+					return $message="";
+				}
+			}
+			else
+			{
+				return $message="Nombre de page ou nombre ancien page egale(s) zéro";
+			}
+		}
+
 	}
 ?>

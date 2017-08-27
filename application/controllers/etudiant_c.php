@@ -8,11 +8,13 @@
       parent:: __construct();
 
       $this->lang->load("etudiant","french");
+      $this->lang->load("pageAccueil","french");
       $this->lang->load("calendar","french");
-    $this->load->helper("url");
+      $this->load->helper("url");
 
 
       $this->load->model('etudiant_m');
+      $this->load->model('entreprise_m');
       $this->load->model('presence_m');
       $this->load->model('emploi_m');
       $this->load->model('document_attache_m');
@@ -26,6 +28,7 @@
       $this->load->helper("url");
       $this->load->helper('language');
       $this->load->helper('form');
+      $this->load->library("pagination");
 
       $this->load->library('form_validation');
   
@@ -766,5 +769,67 @@
           redirect("etudiant_c/etudiant_details/".$this->input->post('GMET_CODE'));
         }
     }
+
+    public function procedure_admin($id) {
+      $data['etudiant']=$this->etudiant_m->get_etudiant($id);
+      $data['etudiant_menu'] = $this->load->view('etudiant/etudiant_menu_gauche', NULL, TRUE);
+      $this->load->view('etudiant/etudiant_procedures',$data);
+    }
+
+    public function annuaire_entreprise()
+    {
+      $message = 'Annuaire des entreprises Actuels';
+      $config = array();
+      $config["base_url"] = base_url(). "etudiant_c/entreprise_annuaire";
+      $config["total_rows"] = $this->entreprise_m->nombreEntreprise();
+      $config["per_page"] = 30;
+      $config["uri_segment"] = 3;
+
+      $this->pagination->initialize($config);
+
+      $start = ($this->uri->segment(3)) ? $this->uri->segment(3) : 1;
+      $data["result"] = $this->entreprise_m->getByPageEntreprise($config["per_page"],$start);
+      $data["links"] = $this->pagination->create_links();
+      $data["message"] = $message;
+
+      $this->load->view('etudiant/annuaire_entreprise',$data);
+    }
+
+    /* Tous les liens qui font appel à cette methode doivent se terminer
+    par l'id de l'etudiant */
+    public function deposer_justificatif_absence($id)
+    {
+       $config['upload_path']   = './uploads'; 
+         $config['allowed_types'] = 'gif|docx|jpg|png|pdf'; 
+         $config['max_size']      = 4000; 
+         $config['max_width']     = 1024; 
+         $config['max_height']    = 768;  
+         $this->load->library('upload', $config);
+
+        $data['etudiant']=$this->etudiant_m->get_etudiant($id);
+
+
+         $seance = $this->input->post('seance');
+         $excuse_absence = $this->input->post('excuse_absence');
+         $u = isset($_FILES['justificatif_absence']['name']);
+         if($u) $justificatif_absence = $_FILES['justificatif_absence']['name'];
+         
+      
+         if ($u && ! $this->upload->do_upload('justificatif_absence')) {
+            $error = array('error' => $this->upload->display_errors()); 
+            $error['etudiant'] = $data['etudiant'];
+            $this->load->view('etudiant/etudiant_justificatif_absence', $error); 
+         }
+      
+         else {
+            if($u) {
+              $file_name = $this->upload->data()['file_name']; 
+              $this->presence_m->deposer_justificatif_absence($id,$seance,$excuse_absence,$file_name);
+              $data['error'] = "Le justificatif d'absence est bien sauvegardé";
+            }
+            //$data = array('upload_data' => $this->upload->data()); 
+            $this->load->view('etudiant/etudiant_justificatif_absence', $data); 
+         } 
+    }
   }
-?>
+  ?> 

@@ -19,6 +19,9 @@
 	        $this->GMEN_CODE_POSTAL = $this->input->post('GMEN_CODE_POSTAL');
 	        $this->GMEN_VILLE = $this->input->post('GMEN_VILLE');
 	        $this->GMEN_PAYS = $this->input->post('GMEN_PAYS');
+	        $this->GMEN_EFFECTIF = $this->input->post('GMEN_EFFECTIF');
+	        $this->GMEN_SECTEUR_ACTIVITE = $this->input->post('GMEN_SECTEUR');
+	        $this->GMEN_CHIFFRE_AFFAIRE = $this->input->post('GMEN_CHIFFRE_AFFAIRE');
 	       
 
 	        $this->db->insert('gmentreprise', $this);
@@ -49,7 +52,7 @@
 
 		public function getEntreprise()
 		{
-			return $this->db->select("GMEN_CODE, GMEN_NOM")
+			return $this->db->select("GMEN_NOM, GMEN_SECTEUR_ACTIVITE, GMEN_EFFECTIF, GMEN_CHIFFRE_AFFAIRE, GMEN_SITE_WEB, GMEN_VILLE")
 							->order_by("GMEN_NOM", "asc")
 							->get('gmentreprise');
 
@@ -137,7 +140,7 @@
 					$min = ($num_page+$number_entreprise_page)-$num_page;
 				}
 			
-				$value = $this->db->distinct()->select("GMEN_CODE, GMEN_NOM, GMEN_VILLE, GMEN_PAYS")
+				$value = $this->db->distinct()->select("GMEN_NOM, GMEN_SECTEUR_ACTIVITE, GMEN_EFFECTIF, GMEN_CHIFFRE_DAFFAIRE, GMEN_SITE_WEB, GMEN_VILLE")
 											->from('gmentreprise')
 											->where_not_in('GMEN_CODE', 'GMEN963852')
 											->order_by("GMEN_NOM", "asc");

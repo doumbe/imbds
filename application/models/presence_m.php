@@ -55,6 +55,17 @@
 				->where(array('gm_presence.gmet_code' => $id))->get()->result();
 		}
 
+		public function deposer_justificatif_absence($et_code, $sea_code,$excuse, $nomFic) {
+			$data = array('GMET_CODE'=>$et_code,
+					'GMSEA_CODE'=>$sea_code,
+					'GMPRE_STATUT'=>'Non',
+					'GMPRE_EXCUSE_JUSTIFICATIF'=>$excuse,
+					'GMPRE_EXCUSE_DOCUMENT_JUSTIFICATIF'=>$nomFic,
+					'GMPRE_EXCUSE_VALIDEE'=>0,
+					'GMPRE_EXCUSE_RAISON_REFUS'=>'');
+			return $this->db->insert('GM_presence',$data);
+		}
+
 
 	}
 

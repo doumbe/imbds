@@ -2,13 +2,14 @@
 <nav style="margin-top:-30px;">
 <ul>
 <li class="page_item page-item-4">
+
 <?php 
 	$fiche = array(
 		'id' => 'a_menu_infos_base',
 		'class' => 'link a_link_file',
 		'title' => lang('candidat_infos_base')
 	);
-	echo anchor("candidat_c/page_accueil_site/",lang('candidat_Acceuil'),$fiche); //GMCA160011
+	echo anchor("candidat_c/page_accueil_site/",Candidat Accueil,$fiche); //GMCA160011
 ?>
 </li><!--
 <li class="page_item page-item-4">

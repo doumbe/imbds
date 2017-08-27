@@ -25,7 +25,7 @@
       </div>	
 		<div id="page">
       		<div id="contenu" data-page="etudiant_login">
-        		<?php $this->load->view('/menu.php');?>
+        		<?php $this->load->view('menu.php'); ?>
         		<div id="content" class="narrowcolumn">
 
 					<?php echo validation_errors(); ?>

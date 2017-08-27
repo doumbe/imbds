@@ -1,4 +1,4 @@
-<div id="menu_gauche">
+<div id="menugauche">
 <ul>
 <li class="page_item page-item-4">
 <?php 

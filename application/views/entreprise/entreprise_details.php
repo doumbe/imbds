@@ -23,7 +23,7 @@
 		<div id="page">
       		<div id="contenu">
         		<?php $this->load->view('/entreprise/entreprise_menu_gauche.php');?> <!-- cette ligne permet d'afficher le menu de gauche -->
-        		<div id="content" class="narrowcolumn">
+        		<div id="content" class="narrowcolumn" style="margin-left:0">
         			<div id="detail_ancien_content" class="post">
 						<div id="menu_ancien">
 						</div> 

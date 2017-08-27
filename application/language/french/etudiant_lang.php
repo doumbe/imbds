@@ -192,3 +192,4 @@ $lang['date_lieu_stage'] = 'Du %s au %s - %s';
 $lang['delete'] = 'delete';
 $lang['modify'] = 'modifier';
 $lang['aucun_pays'] = 'pays non renseign&eacute;';
+$lang["page_accueil_site"] = 'candidat fiche_information_personne';
