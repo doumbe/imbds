@@ -48,6 +48,7 @@
 
 				$value = $this->db->distinct()->select('*')
 												->from('GMEtudiant')
+												->join('gmdocumentattache','GMEtudiant.GMET_CODE=gmdocumentattache.GMET_CODE')
 												->order_by("GMET_NOM", "DESC");
 
 				$query = $this->db->limit($num_page,$min)->get();

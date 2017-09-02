@@ -66,19 +66,18 @@ if(empty($_SESSION['connecte']))
               <table id="table_etudiant_actuel" class="table table-bordered">
                 <thead>
                   <tr>
-                    <th class="table_left"><?php echo lang('th_annee');?></th>
                     <th class="table_left"><?php echo lang('th_nom');?></th>
                     <th class="table_left"><?php echo lang('th_prenom');?></th>
                     <th><?php echo lang('cv');?></th> 
-                    <!--<th><?php echo lang('th_linkedin');?></th>
-                    <th><?php echo lang('th_detail');?></th> -->
+                    <th class="table_left">Téléphone</th>
+                    <th class="table_left">Courriel</th>
+                    <th><?php echo lang('th_detail');?></th> 
                   </tr> 
                 </thead>
                 <tbody>
                   <?php foreach ($result as $row): ?>
                     
                     <tr>
-                      <td class="table_left"><?php echo $row->GMPR_ANNEE;?></td>
                       <td class="table_left" ><?php echo $row->GMET_NOM;?></td>
                       <td class="table_left"><?php echo $row->GMET_PRENOM;?></td>
                       <td>
@@ -88,11 +87,9 @@ if(empty($_SESSION['connecte']))
                           </a>
                        
                       </td>
+                      <td class="table_left"><?php echo $row->GMET_TELEPHONE_PORTABLE;?></td>
                       <td>
-                        <?php if(!is_null($row->GMERS_LINK) and $row->GMRS_NOM=="linkedin"){?>
-                          <a target="_blank" href="<?php echo $row->GMERS_LINK;?>">
-                          <img class="th_logo" src="<?php echo base_url().$row->GMRS_LOGO; ?>" /></a>
-                        <?php }?>
+                        <?= $row->GMET_EMAIL; ?>
                       </td>
                       <td>
                         <span class="link_span">
