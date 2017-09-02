@@ -67,7 +67,7 @@
           <table class="table table-bordered" >
 
             <caption>
-              <h4><?php echo lang("procedure_administrative_list");?></h4>
+              <h4><?php echo lang("etudiant_list");?></h4>
             </caption>
             <thead>
               <tr>

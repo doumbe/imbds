@@ -117,7 +117,7 @@
 </li>
 </ul>
 <a target="_blank" href="http://www.facebook.com/group.php?gid=7488456084">
-<img src="http://www.mbds-fr.org/wp-content/themes/default/images/fb.gif" alt="Find us on Facebook">
+<img src="http://www.mbds-fr.org/wp-content/themes/default/images/fb.gif" alt="Find us on Facebook 	">
 </a>
 </nav>
 </div>

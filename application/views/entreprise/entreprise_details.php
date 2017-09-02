@@ -94,10 +94,10 @@
 										//echo lang('promotion').$ancien->getNamePromotion().'<br />';
 										echo '<p><span class="label">'.lang('directeur_entreprise').'</span><span class="capital">'.$entreprise->GMEN_DIRECTEUR.'</span></p>';
 										echo '<p><span class="label">'.lang('code_entreprise').'</span>'.$entreprise->GMEN_CODE.'</p>';
-										echo '<p><span class="label">'.lang('code_siret').'</span>'.$entreprise->GMEN_CODE_SIRET.'</p>';
+										//echo '<p><span class="label">'.lang('code_siret').'</span>'.$entreprise->GMEN_CODE_SIRET.'</p>';
 										echo '<p><span class="label">'.lang('nom_entreprise').'</span>'.$entreprise->GMEN_NOM.'</p>';
 										echo '<p><span class="label">'.lang('siege_entreprise').'</span>'.$entreprise->GMEN_SIEGE.'</p>';
-										echo '<p><span class="label">'.lang('secteur_dactivite').'</span>'.$entreprise->GMEN_SECTEUR_DACTIVITE.'</p>';
+										echo '<p><span class="label">'.lang('secteur_dactivite').'</span>'.$entreprise->GMEN_SECTEUR_ACTIVITE.'</p>';
 										echo '<p><span class="label">'.lang('effectif').'</span>'.$entreprise->GMEN_EFFECTIF.'</p>';
 										echo '<p><span class="label">'.lang('chiffre_daffaire').'</span>'.$entreprise->GMEN_CHIFFRE_DAFFAIRE.'</p>';
 									?>
@@ -126,12 +126,12 @@
 										echo '<p><span class="label">'.lang('site_web').'</span>'.$entreprise->GMEN_SITE_WEB.'</p>';
 									?>
 								</div>
-								<div id="info_observation" class="info_ancien">
+								<!--<div id="info_observation" class="info_ancien">
 								
 								<?php
-									echo '<p><span class="label">'.lang('observation').'</span>'.$entreprise->GMEN_RENSEIG_SUP.'</p>'; 
+									//echo '<p><span class="label">'.lang('observation').'</span>'.$entreprise->GMEN_RENSEIG_SUP.'</p>'; 
 								?>
-							</div>
+							</div>-->
 							</div>
 							</div>
 						</div> 			

@@ -8,7 +8,7 @@
 					'class' => 'link a_link_file',
 					'title' => lang('accueil')
 				);
-				echo anchor("backoffice_ajout/",lang('accueil'),$fiche);
+				echo anchor("backoffice_ajout/",'Accueil',$fiche);
 			?>
 		</li>
 		<li class="page_item page-item-14">
@@ -18,7 +18,7 @@
 							'class' => 'link a_link_file',
 							'title' => lang('gestion_planning')
 						);
-						echo anchor("backoffice_liste/gestion_planning",lang('gestion_planning'),$fiche);
+						echo anchor("backoffice_liste/gestion_planning",'Gestion Planning',$fiche);
 					?>
 			<ul class="hide_ul" id="ul_planning"> 
 		        <li class="page_item page-item-14">

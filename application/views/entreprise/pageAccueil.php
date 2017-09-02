@@ -14,7 +14,7 @@
       </div><!--header-->
 
       <div id = 'contenu'>
-        <?php $this->load->view('entreprise/menu.php'); ?>
+        <?php $this->load->view('entreprise/entreprise_menu_gauche.php'); ?>
 
         <div id = 'content' class = 'narrowcolumn'>
 

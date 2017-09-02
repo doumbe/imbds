@@ -63,6 +63,8 @@ class Entreprise_liste extends CI_Controller
     // on charge des données dans un tableau pour la vue 
     $data['procedure_administrative'] = $procedure_administrativeResult;
     $data['link'] = $link;
+      $data['entreprise'] = $this->entreprise_m->getEntrepriseById('GMEN637764');
+
 
     // on appel la vue avec le tableau des contacts et des entreprises
     $this->load->view('entreprise/liste/vue_liste_procedure_administrative',$data); 
@@ -78,6 +80,20 @@ class Entreprise_liste extends CI_Controller
           
       }
 
+  	public function recherche_etudiant(){
+      	$data['entreprise'] = $this->entreprise_m->getEntrepriseById('GMEN637764');
+
+      	$data['etudiant'] = array();
+        if(isset($_POST) && isset($_POST['nom'])) {
+        	$mot = strtoupper($_POST['nom']);
+        	$data['etudiant'] = $this->etudiant_m->rechercheEtudiant($mot);
+        }
+
+
+        $this->load->view('entreprise/liste/vue_liste_etudiant',$data);
+          
+      }
+
 
   public function list_etudiant()
   {
@@ -90,12 +106,13 @@ class Entreprise_liste extends CI_Controller
         $this->pagination->initialize($config);
       
       $start = ($this->uri->segment(3)) ? $this->uri->segment(3) : 1;
-      $list_etudiantResult = $this->procedure_m->getByPage_etudiant($config["per_page"],$start);
+      $list_etudiantResult = $this->etudiant_m->getByPage_etudiant($config["per_page"],$start);
         $link = $this->pagination->create_links();
 
     // on charge des données dans un tableau pour la vue 
     $data['list_etudiant'] = $list_etudiantResult;
     $data['link'] = $link;
+    $data['entreprise'] = $this->entreprise_m->getEntrepriseById('GMEN637764');
 
     // on appel la vue avec le tableau des contacts et des entreprises
     $this->load->view('entreprise/liste/vue_liste_etudiant',$data); 

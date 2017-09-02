@@ -71,12 +71,18 @@
 			}
 		}
 
-
 		public function getEtudiant()
 		{
 			return $this->db->select("GMET_CODE, CONCAT(GMET_NOM, ' ',GMET_PRENOM) AS etudiant", false)
 							->get('gmetudiant')
 							->result();
+		}
+
+		public function rechercheEtudiant($mot) {
+			$etudiant = $this->db->like('GMET_NOM', $mot)->select('*
+					')->from('gmetudiant')->join('gmdocumentattache','gmetudiant.GMET_CODE=
+					gmdocumentattache.GMET_CODE')->get();
+			return $etudiant->result();
 		}
 
 		

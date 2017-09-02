@@ -37,7 +37,8 @@
 
     function index()
     {
-      $this->load->view('entreprise/pageAccueil');
+      $data['entreprise'] = $this->entreprise_m->getEntrepriseById('GMEN637764');
+      $this->load->view('entreprise/pageAccueil',$data);
         //redirect('ancien_c/ancien_annuaire'); // Une redirection de l'entreprise_c dans la fonction ancien_annuaire qui se trouve dans le controleur ancien_c
 
     }
@@ -48,14 +49,14 @@
         
         $config = array();
         $config["base_url"] = base_url(). "entreprise_c/etudiant_annuaire";
-        $config["total_rows"] = $this->etudiant_m->calcul_etudiant();
+        $config["total_rows"] = $this->etudiant_m->nombre_etudiant();
         $config["per_page"] = 30;
         $config["uri_segment"] = 3;
         
         $this->pagination->initialize($config);
         
         $start = ($this->uri->segment(3)) ? $this->uri->segment(3) : 1;
-        $data["result"] = $this->etudiant_m->getByPage($config["per_page"],$start);
+        $data["result"] = $this->etudiant_m->getByPage_etudiant($config["per_page"],$start);
         $data["links"] = $this->pagination->create_links();
         $data["message"] = $message;
         

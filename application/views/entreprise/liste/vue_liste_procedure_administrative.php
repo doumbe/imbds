@@ -67,7 +67,7 @@
           <table class="table table-bordered" >
 
             <caption>
-              <h4><?php echo lang("procedure_administrative_list");?></h4>
+              <h4>Liste des Etudiants</h4>
             </caption>
             <thead>
               <tr>

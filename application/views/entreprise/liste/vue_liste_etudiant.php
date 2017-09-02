@@ -9,6 +9,16 @@
         return confirm(mess);    
       }
   </script>
+  <style>
+      body #page #contenu {
+        display: flex;
+      }
+
+      body #page #content {
+        margin-left:3px;
+      }
+
+  </style>
 
   </head>
   <body>
@@ -19,16 +29,16 @@
       </div><!--header-->
 
       <div id = 'contenu'>
-       <!-- <?php// include("/../entreprise_menu_gauche.php"); ?>-->
+       <?php include("/../entreprise_menu_gauche.php"); ?>
 
-        <div id = 'content' class = 'narrowcolumn'>
+        <div id = "content" class = "narrowcolumn">
 
         <div id="message">
             <h2><?php echo lang("list_etudiant_title");?></h2>
         </div>
     <div class ="recherche">
     <!-- liste des entreprises-->
-    <?php echo form_open('entreprise_liste/recherche_procedure_administrative');?>
+    <?php echo form_open('entreprise_liste/recherche_etudiant');?>
     <?php echo form_fieldset(lang('search'));?>
 
         <div id = "nomprocedure_administrative">
@@ -61,34 +71,42 @@
    
        <div class="panel-body">
         <div class="table-responsive">
-         
-         <?php if(!empty($procedure_administrative)){ ?>
+         <?php if((!isset($etudiant) || empty($etudiant)) && isset($list_etudiant)){$etudiant = $list_etudiant;};?>
+         <?php if(!empty($etudiant)) { ?>
 
           <table class="table table-bordered" >
 
             <caption>
-              <h4><?php echo lang("procedure_administrative_list");?></h4>
+              <h4><?php echo lang("etudiant_list");?></h4>
             </caption>
             <thead>
               <tr>
-                <th><?php echo lang("name");?></th>
-                <th><?php echo lang("th_type");?></th>
-                <th><?php echo lang("val_description");?></th>
-                <th class="table_center"><?php echo lang("th_document");?></th>
-                <th><?php echo lang("th_action");?></th>
+                <!--<th>N° Etudiant</th> -->
+                <th><?= lang("name");?></th>
+                <th>Prénom</th>
+                <th>Situation</th>
+                <th class="table_center">CV</th>
+                <th>Tél</th>
+                <th>Courriel</th>
               </tr>
             </thead>
             <tbody>
                <?php 
-                foreach ($procedure_administrative as $row): ?>
+                foreach ($etudiant as $row): ?>
+                <!-- <h3>$row</h3> -->
                 <tr>
-                  <td class="table_left table_vertical_center"><?php echo $row->GMPA_NOM;?></td>
-                   <td class="table_left table_vertical_center"><?php echo $row->GMPA_TYPE;?></td>
-                   <td class="table_left table_vertical_center"><?php echo $row->GMPA_DESCRIPTION;?></td> 
+                  <!--<td class="table_left table_vertical_center"><?php //echo $row->GMET_NUMERO_ETUDIANT;?></td>-->
+                   <td class="table_left table_vertical_center"><?php echo $row->GMET_NOM;?></td>
+                   
+                   <td class="table_vertical_center">
+                      <?= $row->GMET_PRENOM;?>
+                      
+                  </td>
+                   <td class="table_left table_vertical_center"><?php echo $row->GMET_REMARQUES;?></td> 
                    <td class="table_center">
-                    <?php if(!is_null($row->GMPA_DOCUMENT)){?>
-                      <?php $GMPA_FORMAT= explode('.',$row->GMPA_DOCUMENT); ?>
-                          <a target="_blank" href="<?php echo base_url().$row->GMPA_DOCUMENT;?>">
+                    <?php if(isset($row->GMDA_DOCUMENT) && !is_null($row->GMDA_DOCUMENT)){?>
+                      <?php $GMPA_FORMAT= explode('.',$row->GMDA_DOCUMENT); ?>
+                          <a target="_blank" href="<?php echo base_url().$row->GMDA_DOCUMENT;?>">
                             <?php if($GMPA_FORMAT[1]=="pdf"){?>
                               <img class="th_logo" src="<?php echo base_url().'images/logo/pdf.png';?>"  />
                             <?php }?>
@@ -106,18 +124,15 @@
                             <?php }?>
                           </a>
                     <?php }?>
-                   </td>  
-                   <td class="table_vertical_center">
-                      <?php echo anchor('backoffice_modification/fiche_procedure_administrative/'.$row->GMPA_CODE, lang('details'));?>
-                      <?php echo anchor('backoffice_modification/modifier_procedure_administrative/'.$row->GMPA_CODE, lang('modify'));?>
-                      <?php 
-                        $attr = array(
-                                      'onclick'=>'return confirmDialog();'
-                                      );
-                        echo anchor('backoffice_liste/delete_procedure_administrative/'.$row->GMPA_CODE, lang('delete'),$attr);
-                      ?>
-                      
-                  </td>
+                   </td>
+                   <td class="table_left table_vertical_center">
+                   <?= $row->GMET_TELEPHONE_PORTABLE; ?>
+                   </td>
+                   <td class="table_left table_vertical_center">
+                   <?= $row->GMET_EMAIL; ?>
+                   </td>
+
+                   
                 </tr>
                 
               <?php endforeach;?>
@@ -135,7 +150,7 @@
             echo $link;
           else
           {
-            echo form_open('entreprise_liste/list_procedure_admin');
+            echo form_open('entreprise_liste/list_etudiant');
             echo form_submit('retour', lang('return'), 'class="btn btn-danger return_button"');
             echo form_close();
           }

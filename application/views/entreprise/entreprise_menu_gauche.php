@@ -57,9 +57,9 @@
 
 ?>
 </li>
-<li class="page_item page-item-1342">
-<a title="<?php echo lang('futur_etudiant');?>" href="#"><?php echo lang('annuaire_futur_etudiant');?></a>
-</li>
+<!--<li class="page_item page-item-1342">
+<a title="<?php //echo lang('futur_etudiant');?>" href="#"><?php //echo lang('annuaire_futur_etudiant');?></a>
+</li>-->
 
 <li class="page_item">
 

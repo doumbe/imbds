@@ -21,7 +21,7 @@
 	        $this->GMEN_PAYS = $this->input->post('GMEN_PAYS');
 	        $this->GMEN_EFFECTIF = $this->input->post('GMEN_EFFECTIF');
 	        $this->GMEN_SECTEUR_ACTIVITE = $this->input->post('GMEN_SECTEUR');
-	        $this->GMEN_CHIFFRE_AFFAIRE = $this->input->post('GMEN_CHIFFRE_AFFAIRE');
+	        $this->GMEN_CHIFFRE_DAFFAIRE = $this->input->post('GMEN_CHIFFRE_AFFAIRE');
 	       
 
 	        $this->db->insert('gmentreprise', $this);
@@ -52,7 +52,7 @@
 
 		public function getEntreprise()
 		{
-			return $this->db->select("GMEN_NOM, GMEN_SECTEUR_ACTIVITE, GMEN_EFFECTIF, GMEN_CHIFFRE_AFFAIRE, GMEN_SITE_WEB, GMEN_VILLE")
+			return $this->db->select("GMEN_NOM,GMEN_CODE, GMEN_SECTEUR_ACTIVITE, GMEN_EFFECTIF, GMEN_CHIFFRE_DAFFAIRE, GMEN_SITE_WEB, GMEN_VILLE")
 							->order_by("GMEN_NOM", "asc")
 							->get('gmentreprise');
 
